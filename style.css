@@ -1,0 +1,756 @@
+/* GENERAL */
+
+*{
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+h1{
+    font-family: 'Dosis', sans-serif;
+}
+h2{
+    font-family: 'Dosis', sans-serif;
+}
+h3{
+    font-family: 'Dosis', sans-serif;
+}
+
+/*HEADER*/
+
+/* .header{
+    height: 66px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0; */
+.header{
+    height: 66px;
+    top: 0;
+    z-index: 99999;
+    position: fixed;
+    background-color: rgba(255,255,255,0.8);
+    width: 100%;
+    /* display:flex;
+    justify-content: space-between; */
+
+}
+#logoHeader{
+    height: 45px;
+    padding-top: 10px;
+    padding-left: 12px;
+}
+.toggleButton{
+    height: 30px;
+    width: 30px;
+    position: relative; 
+    cursor: pointer;
+    float: right;
+    margin-right: 12px;
+    margin-top: 9px;
+ }
+ 
+ .toggleButton span{
+     height: 3px;
+     background-color:#00B4D0;
+     width: 100%;
+     position: absolute;
+     top: 20px;
+     left: 0;
+     border-radius: 12px;
+ }
+ 
+ .toggleButton span::before{
+     content: "";
+     height: 3px;
+     background-color: #00B4D0;
+     width: 100%;
+     position: absolute;
+     top: -10px;
+     left: 0;
+     border-radius: 12px;
+ }
+ .toggleButton span::after{
+     content: "";
+     height: 3px;
+     background-color: #00B4D0;
+     width: 100%;
+     position: absolute;
+     top: 10px;
+     left: 0;
+     border-radius: 12px;
+ }
+#menu{
+    height: 344px;
+    background-color: rgb(0, 175, 208);
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5.5px;
+    border-bottom-right-radius: 34px;
+}
+#menu a{
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    list-style-type: none;
+    margin-left: 14px;
+    text-align: left;
+    padding-left: 17px;
+    padding-top: 27px;
+}
+.logoFb{
+    height: 26px;
+}
+.nav{
+    margin-left: -458px;
+    transition: 0.2s;
+}
+.navOpen{
+    margin-left: 0px;
+    transition: 0.2s;
+    z-index: 5;
+}
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: block; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 66px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2); /* Black background with opacity */
+    z-index: -1; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+    opacity: 0;
+    transition: 0.5s;
+}
+.overlayOpen{
+    opacity: 1 !important;
+}
+
+/*SLIDE*/
+
+.slide{
+    margin-top: 66px;
+    height : 344px;
+    width: 100%;
+    background-image: url(/img/Slider\ \ telephone.png);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.titreEntier{
+    font-family: 'Dosis', sans-serif;
+    margin-top: 23px;
+}
+.titre1{
+    color: rgb(90, 90, 90);
+    font-size: 15px;
+}
+.titre2{
+    font-size: 37px;
+    margin-top: 4px;
+    color: #00B4D0;
+}
+.titre3{
+    color: rgb(90, 90, 90);
+    letter-spacing: 2px;
+}
+
+/* PROGRAMMATION */
+
+#programmation{
+    height: 1667px;
+    align-content: center;
+    justify-content: center;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 287px ;
+    grid-template-rows: 406px 25px 406px 25px 406px 25px 236px;
+    grid-template-areas: 
+    "Art1"
+    "."
+    "Art2"
+    "."
+    "Art3"
+    "."
+    "Art4";
+    opacity: 0;
+}
+.showprogrammation{
+    opacity: 1 !important;
+    transition-duration: 1s;
+}
+.nomArtiste1{
+    text-align: center;
+    color: #ede234;
+    padding-top: 6px;
+    margin-bottom: 0px;
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 1px;
+    font-size: 28px;
+}
+.lauriePeretImg{
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+.artiste1{
+    grid-area: Art1;
+    background-color: #00afd0;
+    border-radius: 16px;
+}
+.dateArtiste1{
+    text-align: center;
+    color: white;
+    font-size: 3.4vw;
+}
+.artiste2{
+    grid-area: Art2;
+    background-color: #00afd0;
+    border-radius: 16px;
+}
+.nomArtiste2{
+    text-align: center;
+    color: #ede234;
+    padding-top: 6px;
+    margin-bottom: 0px;
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 1px;
+    font-size: 28px;
+}
+.dateArtiste2{
+    text-align: center;
+    color: white;
+    font-size: 3.4vw;
+}
+.joBramiImg{
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    width: 100%;
+    height: 311px;
+}
+
+.artiste3{
+    grid-area: Art3;
+    background-color:   #00afd0;
+    border-radius: 16px;
+}
+.nomArtiste3{
+    text-align: center;
+    color: #ede234;
+    padding-top: 6px;
+    margin-bottom: 7px;
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 1px;
+    font-size: 21px;
+}
+.dateArtiste3{
+    text-align: center;
+    color: white;
+    font-size: 3.4vw;
+}
+.feministePourHomme{
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    width: 100%;
+    height: 311px;
+}
+.artiste4bis{
+    display: flex;
+    flex-direction: column;
+    padding-top: 120px;
+    padding-left: 0px;
+    justify-content: center;
+    margin: 0 auto;
+}
+.artiste4{
+    grid-area: Art4;
+    background-color: #00afd0;
+    border-radius: 16px;
+    display: flex;
+}
+.nomArtiste4{
+    text-align: center;
+    color: #ede234;
+    padding-top: 19px;
+    margin-bottom: 7px;
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 1px;
+    font-size: 21px;
+}
+.dateArtiste4{
+    text-align: center;
+    color: white;
+    font-size: 3.4vw;
+}
+.plateauArtistes{
+    height: 24%;
+    margin-left: -12px;
+    margin-top: -12px;
+    position: absolute;
+}
+
+/* LOCALISATION */
+
+.bandeauGris{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    padding: 20px 25px;
+    background-image: url(/img/FondPartenaire.jpg)
+}
+.premiereEdition{
+    color: #00B4D0;
+}
+.paragrapaheLocalisation{
+    font-size: 12px;
+    margin-top: 12px;
+}
+#imgLocalisation{
+    height: 0px;
+    margin-top: 32px;
+    opacity: 0;
+    transition: 1s ease-out;
+}
+.imgLocalisationAfter{
+    opacity: 1 !important;
+    height: 182px !important;
+}
+
+/* NEWSLETTER */
+
+.newsletter{
+    height: 118px;
+    background-color: #0eafce;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inscrit{
+    color: white;
+    text-align: center;
+    margin: 16px 0;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.partieEnvoyer{
+    display: flex;
+}
+#emailAddress{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 218px;
+    border: none;
+    padding-left: 10px;
+    height: 31px;
+}
+.button{
+    width: 83px;
+    border: none;
+    height: 33px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #f6f6f6;
+    color: #0eafce;
+}
+
+/* PARTENAIRES */
+
+.partenaires{
+    height: 345px;
+    background-image: url(/img/FondPartenaire.jpg);
+    align-items: center;
+    padding: 50px 42px 0px 42px;
+}
+.nosPartenaires{
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    
+}
+
+/* CONTACT */
+
+.Contact{
+    box-shadow: inset 0px 38px 44px -41px rgba(0,0,0,0.25);
+    display: flex;
+    flex-direction: column;
+}
+.titreContact{
+    text-align: center;
+    padding-top: 36px;
+    margin-bottom: 30px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.adresse{
+    text-align: center;
+    font-size: 2vw;
+    margin-bottom: 30px;
+}
+.containerContact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    padding: 0px 42px 32px 42px;
+}
+.infoPersonne{
+    margin-bottom: 12px;
+}
+.fonction{
+    font-size: 2.4vw;
+}
+.prenom{
+    font-size: 2.3vw;
+}
+
+/* FOOTER */
+
+footer{
+    height: 34px;
+    background-color: #E5E5E5;
+    display: flex;
+    align-items: center;
+}
+.credits{
+    padding: 0px;
+    font-size: 2.3vw;
+    color: #303030;
+    margin: 0px;
+    text-align: center;
+    width: 100%;
+    justify-self: center;
+}
+
+@media all and (min-width: 376px){
+
+    /* HEADRER */
+    .header{
+        align-content: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .toggleButton{
+    display:none;
+    }
+    #menu{
+        height:66px;
+        background-color: transparent;
+        width: 40%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    #menu a{
+        color: #00B4D0;
+        padding-left: 0px;
+        padding-top: 0px;
+    }
+    .nav{
+        margin-left: 0px;
+        transition: 0s;
+    }
+    #logoHeader{ /* AVANT */
+        height: 175px;
+        padding-top: 28px;
+        padding-left: 12px;
+        margin-right: 62px;
+        transition: 1s;
+    }
+    .logoHeaderAfter{ /* APRES */
+        height: 45px !important;
+        padding-top: 9px !important;
+        margin-right: 0px !important;
+    }
+    nav a .logoFb .st0{
+        fill:rgb(0, 175, 208) !important;
+    }
+    #overlay {
+        display: none;
+    }
+    .logoFb{
+        height: 15px;
+    }
+
+    /* SLIDE */
+    .slide{
+        text-align: left;
+        margin-top: 66px;
+        height : 344px;
+        width: 100%;
+        background-image: url(/img/Slider\ Desktop.png);
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: start;
+        align-items: flex-start;
+    }
+    .titreEntier{
+        padding-top: 164px;
+        margin-left: 202px;
+        text-align: left;
+    }
+    .titre1{
+        font-size: 20px;
+    }
+    .titre2{
+        font-size: 44px;
+        margin: 12px 0px 0px 0px;
+    }
+    .titre3{
+        font-size: 26px;
+    }
+
+    /* PROGRAMMATION*/ 
+
+    #programmation{
+        height: 495px;
+        align-content: center;
+        justify-content: center;
+        background-color: white;
+        display: grid;
+        grid-template-columns: 287px 25px 214px 25px 214px;
+        grid-template-rows: 287px 25px 119px;
+        grid-template-areas: 
+        "Art1 . Art2 . Art3"
+        "Art1 . . . ."
+        "Art1 . Art4 Art4 Art4";
+        opacity: 0;
+    }
+    .showprogrammation{
+        opacity: 1 !important;
+        transition-duration: 1s;
+    }
+    .nomArtiste1{
+        text-align: center;
+        color: #ede234;
+        padding-top: 19px;
+        margin-bottom: 6px;
+        font-family: 'Dosis', sans-serif;
+        letter-spacing: 1px;
+    }
+    .lauriePeretImg{
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+    }
+    .artiste1{
+        grid-area: Art1;
+        background-color: #00afd0;
+        border-radius: 16px;
+    }
+    .artiste1:hover .nomArtiste1{
+        color: #00afd0;
+    }
+    .artiste1:hover{
+        background-color: #ede234;
+        cursor: pointer;
+    }
+    .dateArtiste1{
+        text-align: center;
+        color: white;
+        font-size: 14px;
+    }
+    .artiste1:hover .dateArtiste1{
+        color: rgb(85, 85, 85);
+    }
+    .artiste2{
+        grid-area: Art2;
+        background-color: #00afd0;
+        border-radius: 16px;
+    }
+    .nomArtiste2{
+        text-align: center;
+        color: #ede234;
+        margin-bottom: 0px;
+        padding-top: 0px;
+        font-size: 24px;
+        font-family: 'Dosis', sans-serif;
+        letter-spacing: 1px;
+    }
+    .dateArtiste2{
+        text-align: center;
+        color: white;
+        font-size: 10px;
+    }
+    .artiste2:hover{
+        background-color: #ede234;
+        cursor: pointer;
+    }
+    .artiste2:hover .nomArtiste2{
+        color: #00afd0;
+    }
+    .artiste2:hover .dateArtiste2{
+        color: rgb(85, 85, 85);
+    }
+    .joBramiImg{
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+        height: 75%;
+    }
+    .artiste3{
+        grid-area: Art3;
+        background-color:   #00afd0;
+        border-radius: 16px;
+    }
+    .nomArtiste3{
+        text-align: center;
+        color: #ede234;
+        margin-bottom: 2px;
+        padding-top: 9px;
+        font-size: 16px;
+        font-family: 'Dosis', sans-serif;
+        letter-spacing: 1px;
+    }
+    .dateArtiste3{
+        text-align: center;
+        color: white;
+        font-size: 10px;
+    }
+    .artiste3:hover{
+        background-color: #ede234;
+        cursor: pointer;
+    }
+    .artiste3:hover .nomArtiste3{
+        color: #00afd0;
+    }
+    .artiste3:hover .dateArtiste3{
+        color: rgb(85, 85, 85);
+    }
+    .feministePourHomme{
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+        height: 75%;
+    }
+    .artiste4bis{
+        padding-top: 0px;
+        padding-left: 238px;
+    }
+    .artiste4{
+        grid-area: Art4;
+        background-color:  #00afd0;
+        border-radius: 16px;
+        display: flex;
+    }
+    .nomArtiste4{
+        text-align: center;
+        color: #ede234;
+        margin-bottom: 4px;
+        padding-top: 6px;
+        font-size: 19px;
+        font-family: 'Dosis', sans-serif;
+        letter-spacing: 1px;
+    }
+    .dateArtiste4{
+        text-align: center;
+        color: white;
+        font-size: 0.9vw;
+    }
+    .artiste4:hover{
+        background-color: #ede234;
+        cursor: pointer;
+    }
+    .artiste4:hover .nomArtiste4{
+        color: #00afd0;
+    }
+    .artiste4:hover .dateArtiste4{
+        color: rgb(85, 85, 85);
+    }
+    .plateauArtistes{
+        height: 142px;
+    }
+
+    /* LOCALISATION */
+
+    .bandeauGris{
+        flex-direction: row;
+        text-align: left;
+        align-items: center;
+        justify-content: space-between;
+        height: 500px;
+        padding: 20px 25px;
+    }
+    .premiereEdition{
+        color: #00B4D0;
+        text-align: center;
+    }
+    .texteLocalisation{
+        width: 665px;
+        padding: 72px;
+    }
+    .paragrapaheLocalisation{
+        font-size: 12px;
+        margin-top: 12px;
+    }
+    #imgLocalisation{
+        height: 0px;
+        margin-top: 0px;
+        opacity: 0;
+        transition: 2s;
+    }
+    .imgLocalisationAfter{
+        opacity: 1 !important;
+        height: 422px !important;
+    }
+    /* NEWSLETTER */
+
+    .button:hover{
+        background-color: #007086;
+        color: white;
+        cursor: pointer;
+    }
+
+    /* CONTACT */
+
+    .titreContact{
+        text-align: center;
+        padding-top: 36px;
+        margin-bottom: 30px;
+        font-family: 'Dosis', sans-serif;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+    .adresse{
+        font-size: 12px;
+    }
+    .containerContact{
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+        padding: 0px 172px 32px 172px;
+    }
+    .infoPersonne{
+        margin-bottom: 12px;
+    }
+    .fonction{
+        font-size: 12px;
+    }
+    .prenom{
+        font-size: 12px;
+    }
+
+    /* FOOTER */
+    .credits{
+        font-size: 8px;
+    }
+}
