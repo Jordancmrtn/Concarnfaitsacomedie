@@ -148,6 +148,7 @@ h3{
     flex-direction: column;
     text-align: center;
     align-items: center;
+
 }
 .titreEntier{
     font-family: 'Dosis', sans-serif;
@@ -505,6 +506,9 @@ footer{
         text-align: center;
         justify-content: start;
         align-items: flex-start;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     .titreEntier{
         padding-top: 164px;
@@ -545,7 +549,7 @@ footer{
     .nomArtiste1{
         text-align: center;
         color: #ede234;
-        padding-top: 19px;
+        padding-top: 12px;
         margin-bottom: 6px;
         font-family: 'Dosis', sans-serif;
         letter-spacing: 1px;
