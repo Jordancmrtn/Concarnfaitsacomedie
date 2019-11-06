@@ -127,7 +127,7 @@ h3{
     margin-top: 66px;
     height : 344px;
     width: 100%;
-    background-image: url(./img/Slider\ \ telephone.png);
+    background-image: url("./img/Slider telephone.png");
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -293,7 +293,7 @@ h3{
     justify-content: center;
     height: 500px;
     padding: 20px 25px;
-    background-image: url(./img/FondPartenaire.jpg)
+    background-image: url("./img/FondPartenaire.jpg")
 }
 .premiereEdition{
     color: #00B4D0;
@@ -355,7 +355,7 @@ h3{
 
 .partenaires{
     height: 345px;
-    background-image: url(./img/FondPartenaire.jpg);
+    background-image: url("./img/FondPartenaire.jpg");
     align-items: center;
     padding: 50px 42px 0px 42px;
 }
@@ -482,7 +482,7 @@ footer{
         margin-top: 66px;
         height : 344px;
         width: 100%;
-        background-image: url(./img/Slider\ Desktop.png);
+        background-image: url("./img/Slider Desktop.png");
         display: flex;
         flex-direction: column;
         text-align: center;
