@@ -142,14 +142,13 @@ p{
 
 .billeterie{
     margin-top: 66px;
-    height: 100%;
+    height: 85vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     background-image: url(/img/FondPartenaire.jpg);
-    text-align: center;
 }
 .billeterie h2{
     margin: 33px 0px 12px 0px;
@@ -158,6 +157,7 @@ p{
 }
 .billeterie h3{
     margin-bottom: 33px;
+    text-align: center;
 }
 .billeterieWidget{
     margin-bottom: 30px;
@@ -231,6 +231,9 @@ footer{
         padding-left: 0px;
         padding-top: 0px;
     }
+    #menu a:hover{
+        color: #fcc11a;
+    }
     .nav{
         margin-left: 0px;
         transition: 0s;
@@ -258,6 +261,10 @@ footer{
         height: 745px;
     }
     /* FOOTER */
+    .footer{
+        position: sticky;
+        bottom: 0;
+    }
     .credits{
         font-size: 8px;
     }

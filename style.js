@@ -5,8 +5,6 @@ let overlay = document.querySelector("#overlay")
 button.onclick = function(){
     nav.classList.toggle("navOpen")
     overlay.classList.toggle("overlayOpen")
-
-    
 }
 
 var largeur = window.innerWidth;
