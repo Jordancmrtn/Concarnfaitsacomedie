@@ -17,9 +17,21 @@ h2{
 }
 h3{
     font-family: 'Dosis', sans-serif;
+    letter-spacing: 2px;
 }
-
+h4{
+    font-family: 'Dosis', sans-serif;
+    color: rgb(0, 80, 92);
+}
+ul li{
+    font-size: 12px;
+    padding-right: 33px;
+}
+p{
+    font-size: 12px;
+}
 /*HEADER*/
+
 .header{
     height: 66px;
     top: 0;
@@ -27,6 +39,9 @@ h3{
     position: fixed;
     background-color: rgba(255,255,255,0.8);
     width: 100%;
+    /* display:flex;
+    justify-content: space-between; */
+
 }
 #logoHeader{
     height: 45px;
@@ -42,6 +57,7 @@ h3{
     margin-right: 12px;
     margin-top: 9px;
  }
+ 
  .toggleButton span{
      height: 3px;
      background-color:#00B4D0;
@@ -51,6 +67,7 @@ h3{
      left: 0;
      border-radius: 12px;
  }
+ 
  .toggleButton span::before{
      content: "";
      height: 3px;
@@ -111,6 +128,7 @@ h3{
     left: 0;
     right: 0;
     bottom: 0;
+    visibility: hidden;
     background-color: rgba(0, 0, 0, 0.2); /* Black background with opacity */
     z-index: -1; /* Specify a stack order in case you're using a different order for other elements */
     cursor: pointer; /* Add a pointer on hover */
@@ -119,6 +137,7 @@ h3{
 }
 .overlayOpen{
     opacity: 1 !important;
+    visibility: visible !important;
 }
 
 /*SLIDE*/

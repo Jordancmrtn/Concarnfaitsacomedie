@@ -128,6 +128,7 @@ p{
     left: 0;
     right: 0;
     bottom: 0;
+    visibility: hidden;
     background-color: rgba(0, 0, 0, 0.2); /* Black background with opacity */
     z-index: -1; /* Specify a stack order in case you're using a different order for other elements */
     cursor: pointer; /* Add a pointer on hover */
@@ -136,6 +137,7 @@ p{
 }
 .overlayOpen{
     opacity: 1 !important;
+    visibility: visible !important;
 }
 
 /* BILLETERIE */
@@ -158,6 +160,7 @@ p{
 .billeterie h3{
     margin-bottom: 33px;
     text-align: center;
+    padding: 1%;
 }
 .billeterieWidget{
     margin-bottom: 30px;
