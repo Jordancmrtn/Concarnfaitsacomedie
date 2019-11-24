@@ -146,8 +146,11 @@ p{
     margin-top: 66px;
     height : 344px;
     width: 100%;
-    background-image: url("./img/Slidertelephone.png");
+    background-image: url("./img/2ndEdition/edition2mobile.png");
     display: flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     flex-direction: column;
     text-align: center;
     align-items: center;
@@ -386,6 +389,9 @@ p{
 .partenaires{
     height: 345px;
     background-image: url("./img/FondPartenaire.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     align-items: center;
     padding: 50px 42px 0px 42px;
 }

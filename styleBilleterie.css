@@ -23,12 +23,17 @@ h4{
     font-family: 'Dosis', sans-serif;
     color: rgb(0, 80, 92);
 }
+h5{
+    font-family: 'Dosis', sans-serif;
+    color: rgb(0, 80, 92);
+}
 ul li{
     font-size: 12px;
     padding-right: 33px;
 }
 p{
     font-size: 12px;
+    font-family: 'Dosis', sans-serif;
 }
 /*HEADER*/
 
@@ -144,7 +149,6 @@ p{
 
 .billeterie{
     margin-top: 66px;
-    height: 85vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -161,6 +165,11 @@ p{
     margin-bottom: 33px;
     text-align: center;
     padding: 1%;
+}
+.cardPass{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .billeterieWidget{
     margin-bottom: 30px;
