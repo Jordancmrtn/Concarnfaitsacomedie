@@ -521,7 +521,7 @@ footer{
         margin-top: 66px;
         height : 344px;
         width: 100%;
-        background-image: url("./img/2ndEdition/SliderDesktop2.png");
+        background-image: none;
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -530,6 +530,10 @@ footer{
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+    }
+    .slide img{
+        height: auto;
+        width: 100%
     }
     .titreEntier{
         padding-top: 164px;
@@ -712,8 +716,9 @@ footer{
         text-align: left;
         align-items: center;
         justify-content: space-between;
-        height: 500px;
-        padding: 20px 25px;
+        height: 340px;
+        padding: 0px 25px;
+        margin: 60px auto;
     }
     .premiereEdition{
         color: #00B4D0;
