@@ -17,9 +17,11 @@ h2{
 }
 h3{
   font-family: 'Dosis', sans-serif;
+  margin-bottom: 3%;
 }
 p{
   text-align: center;
+  font-size: 13px;
 }
 
 /*HEADER*/
@@ -212,7 +214,7 @@ footer{
   }
   #menu{
       height:66px;
-      background-color: transparent;
+      background-color: #FFF;
       width: 40%;
       display: flex;
       flex-direction: row;
@@ -264,9 +266,10 @@ footer{
   }
   .infosArtiste{
     align-items: initial;
+    padding: 0 4%;
   }
   .photoArtiste{
-    width: 30%;
+    width: 40%;
     margin-top: 0%;
   }
   /* FOOTER */
