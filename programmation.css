@@ -174,11 +174,27 @@ p{
   width: 89%;
   margin-top: 4%;
 }
+.photoArtiste4{
+  height: auto;
+  width: 250px;
+  margin-bottom: 5%;
+}
 .infosArtiste{
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 4%;
+}
+.infosArtiste2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4%;
+}
+.infosArtiste2 img{
+  height: auto;
+  width: 330px;
+  margin-bottom: 4%;
 }
 .social{
   display: flex;
@@ -186,8 +202,8 @@ p{
   margin-top: 6%;
   width: 95%;
 }
-.container2:nth-child(2n){
-  margin-bottom: 4%;
+#artiste4{
+  margin-bottom: 8%;
 }
 /* FOOTER */
 
@@ -282,6 +298,9 @@ footer{
   .infosArtiste{
     align-items: initial;
     padding: 0 4%;
+  }
+  .infosArtiste:last-child{
+    align-items: center;
   }
   .photoArtiste{
     width: 40%;

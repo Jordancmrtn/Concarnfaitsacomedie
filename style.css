@@ -402,7 +402,20 @@ p{
   text-align: center;
   font-family: 'Dosis', sans-serif;
   font-weight: 700;
-  letter-spacing: 2px; 
+  letter-spacing: 2px;
+  margin-bottom: 7%;
+}
+.container-partenaire{
+  display: flex;
+  align-self: center;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.container-partenaire img{
+  height: auto;
+  width: 50px;
 }
 
 /* CONTACT */
@@ -759,6 +772,28 @@ footer{
     color: white;
     cursor: pointer;
   }
+
+  /* PARTENAIRES */
+
+  .partenaires{
+    height: 190px;
+  }
+  .nosPartenaires{
+    margin-bottom: 0%;
+  }
+  .container-partenaire{
+    display: flex;
+    align-self: center;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .container-partenaire img{
+    height: auto;
+    width: 50px;
+  }
+  
 
   /* CONTACT */
 
