@@ -193,6 +193,17 @@ p{
 .promo a{
   font-size: 18px;
 }
+
+#Promo{
+  animation: Promo 1s infinite;
+}
+
+@keyframes Promo{
+  0%{opacity: 1;}
+  50%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
 /* PROGRAMMATION */
 
 #programmation{
