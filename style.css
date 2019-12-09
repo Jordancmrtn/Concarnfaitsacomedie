@@ -176,6 +176,23 @@ p{
   letter-spacing: 2px;
 }
 
+/* PROMO */
+
+.promo{
+  width: 100%;
+  text-align: center;
+  background-color: #fcc11a;
+  color: #fff;
+  height: 65px;
+  margin-top: 6%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.promo a{
+  font-size: 18px;
+}
 /* PROGRAMMATION */
 
 #programmation{
@@ -568,6 +585,13 @@ footer{
   }
   .titre3{
     font-size: 26px;
+  }
+
+  /* PROMO */
+
+  .promo{
+    margin-top: 2%;
+    height: 45px;
   }
 
   /* PROGRAMMATION*/ 
