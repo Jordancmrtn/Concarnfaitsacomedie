@@ -200,7 +200,7 @@ p{
 
 @keyframes Promo{
   0%{opacity: 1;}
-  50%{opacity: 0;}
+  5%{opacity: 0;}
   100%{opacity: 1;}
 }
 
@@ -359,11 +359,6 @@ p{
   height: 0px;
   margin-top: 32px;
   opacity: 0;
-  transition: 1s ease-out;
-}
-.imgLocalisationAfter{
-  opacity: 1 !important;
-  height: 230px !important;
 }
 
 /* NEWSLETTER */
