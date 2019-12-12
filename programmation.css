@@ -2,6 +2,7 @@
 *{
   margin: 0px;
   font-family: 'Open Sans', sans-serif;
+
 }
 a{
   text-decoration: none;
@@ -12,22 +13,17 @@ h1{
 }
 h2{
   font-family: 'Dosis', sans-serif;
+  color: #fcc11a;
 }
 h3{
   font-family: 'Dosis', sans-serif;
-  letter-spacing: 2px;
-}
-h4{
-  font-family: 'Dosis', sans-serif;
-  color: rgb(0, 80, 92);
-}
-ul li{
-  font-size: 12px;
-  padding-right: 33px;
+  margin-bottom: 3%;
 }
 p{
-  font-size: 12px;
+  text-align: center;
+  font-size: 13px;
 }
+
 /*HEADER*/
 
 .header{
@@ -139,94 +135,76 @@ p{
   margin-left: 14px;
 }
 
-/* INFOS PRATIQUES */
+/* ARTISTE */
 
-.infosPratiques{    
+.container{
+  margin: 0px auto;
   margin-top: 66px;
-  height: 64px;
-  background-color: whitesmoke;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  padding: 2%;
   align-items: center;
-  width: 100%;
+  border-radius: 10px;
+  width: 80%;
+  background-image: url(./img/FondPartenaire.jpg);
 }
-.titreInfosPratiques{
-  color: #00B4D0;
-  letter-spacing: 2px;
-}
-.divLieu{
-  width: 100%;
-  display: flex;
-  background-color: whitesmoke;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.titreLieu{
-  letter-spacing: 2px;
-  margin-bottom: 12px;
-}
-.photoCac{
+.photoArtiste{
+  border-radius: 10px;
   height: auto;
-  width: 100%;
-  border-radius: 5px;
-  margin: 12px 0px;
+  width: 32%;
+  margin-top: 4%;
 }
-.textLieu{
-  margin-top: 30px;
+.iconSocial{
+  height: 42px;
 }
-.blocPhoto{
+.container2{
+  margin: 0px auto;
+  margin-top: 66px;
+  background-image: url(./img/FondPartenaire.jpg);  
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  align-items: center;
+  border-radius: 10px;
+  width: 80%;
+}
+.photoArtiste{
+  border-radius: 10px;
+  height: auto;
+  width: 89%;
+  margin-top: 4%;
+}
+.photoArtiste4{
+  height: auto;
+  width: 250px;
+  margin-bottom: 5%;
+}
+.infosArtiste{
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
+  padding: 4%;
 }
-.divLieu p:last-child{
-  margin-bottom: 30px;
-}
-.divSite{
-  padding-bottom: 30px;
-  width: 100%;
-  background-color: #00B4D0;
-  color: white;
-  box-shadow: inset 0px 38px 44px -41px rgba(0,0,0,0.25);
+.infosArtiste2{
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  padding: 4%;
 }
-.divSite h3{
-  margin: 19px 0px 0px 0px;
+.infosArtiste2 img{
+  height: auto;
+  width: 330px;
+  margin-bottom: 4%;
 }
-.divSite h4{
-  margin-bottom: 12px;
-  margin-top: 12px;
-}
-.divAccesibilite{
-  padding-bottom: 30px;
-  width: 100%;
+.social{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-image: url(/img/FondPartenaire.jpg)
+  justify-content: space-evenly;
+  margin-top: 6%;
+  width: 95%;
 }
-.divAccesibilite h3{
-  margin: 19px 0px 12px 0px;
+#artiste4{
+  margin-bottom: 8%;
 }
-.divDroitImage{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 30px;
-}
-.divDroitImage h3{
-  margin: 19px 0px 12px 0px;
-}
-
 /* FOOTER */
 
 footer{
@@ -302,31 +280,34 @@ footer{
     height: 15px;
   }
 
-  /* INFOS PRATIQUES */
-  .photoCac{
-    height: 190px;
-    width: 59%;
-    border-radius: 5px;
-    margin: 0px 0px;
-    margin-right: 0px;
-    object-fit: cover;
-    transform: translate3d(0px, 13px, 0px) scale(1.8);
-    transition: transform 0.4s cubic-bezier(0, 0, 0, 1) 0s;
-    will-change: transform;
+  /* ARTISTE */
+
+  .container{
+    flex-direction: row;
+    margin-top: 76px;
   }
-  .simpleParallax{
-    width: 100%;
-  }
-  .blocPhoto{
-    display: flex;
-    flex-direction: column;
-    margin: 0px;
-    width: 100%;
-  }
-  .textLieu{
-    display: flex;
-    flex-direction: column;
+  .container p{
     text-align: center;
+  }
+  .container2{
+    flex-direction: row-reverse;
+  }
+  .container2:nth-child(2n){
+    flex-direction: row;
+  }
+  .infosArtiste{
+    align-items: initial;
+    padding: 0 4%;
+  }
+  .infosArtiste:last-child{
+    align-items: center;
+  }
+  .photoArtiste{
+    width: 40%;
+    margin-top: 0%;
+  }
+  .photoArtiste4{
+    width: 360px;
   }
   /* FOOTER */
   .credits{
