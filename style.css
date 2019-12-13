@@ -101,6 +101,9 @@ p{
   padding-left: 17px;
   padding-top: 27px;
 }
+.iconSocialHeadder{
+  margin-top : 12%
+}
 .logoFb{
   height: 26px;
 }
@@ -554,8 +557,15 @@ footer{
   #overlay {
     display: none;
   }
+  .iconSocialHeadder{
+    margin-top : 0%
+  }
   .logoFb{
     height: 15px;
+    transition: 1s;
+  }
+  .logoFb:hover{
+    transform: scale(1.5)
   }
 
   /* SLIDE */
