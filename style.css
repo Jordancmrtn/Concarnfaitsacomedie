@@ -21,6 +21,10 @@ h4{
   font-family: 'Dosis', sans-serif;
   color: rgb(0, 80, 92);
 }
+h5{
+  font-family: 'Dosis', sans-serif;
+  color: #fff;
+}
 ul li{
   font-size: 12px;
   padding-right: 33px;
