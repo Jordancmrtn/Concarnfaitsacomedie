@@ -155,7 +155,6 @@ p{
 #premiereEdition{
   margin-top: 66px;
 }
-
 .titreEditionPrecedente{
   text-align: center;
   padding: 6% 0;
@@ -166,12 +165,10 @@ p{
   margin: 0;
   font-weight: 700;
 }
-
 .textPremiereEdition{
   margin-top: 175px;
   text-align-last: center;
 }
-
 .premiereTitle{
   text-align: center;
   font-size: 12px;
@@ -180,11 +177,9 @@ p{
   letter-spacing: 1px;
   font-family: 'Dosis', sans-serif;
 }
-
 #groupeDesktop{
   display: none;
 }
-
 .containerPremiereEdition{
   display: flex;
   flex-direction: column;
@@ -204,7 +199,6 @@ p{
   margin: 9%;
     text-align: center;
 }
-
 #grandPhoto{
   display: none;
 }
