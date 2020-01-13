@@ -420,7 +420,7 @@ p{
 /* PARTENAIRES */
 
 .partenaires{
-  height: 345px;
+  height: 375px;;
   background-image: url("./img/FondPartenaire.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -439,9 +439,15 @@ p{
   display: flex;
   align-self: center;
   flex-direction: row;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+.logoPlus{
+  background-color: rgba(235, 235, 235, 0.7);
+  border-radius: 15px;
+  padding: 4%;
 }
 .container-partenaire img{
   height: auto;
@@ -820,22 +826,31 @@ footer{
   /* PARTENAIRES */
 
   .partenaires{
-    height: 190px;
+    height: 250px;
   }
   .nosPartenaires{
     margin-bottom: 0%;
   }
   .container-partenaire{
-    display: flex;
-    align-self: center;
-    flex-direction: row;
-    align-items: baseline;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
   }
   .container-partenaire img{
     height: auto;
     width: 50px;
+  }
+  .logoPlus img{
+    height: auto;
+    width: 80px;
+  }
+  .logoPlus{
+    margin-bottom: 25px;
+  }
+  .logoPartenaireLong{
+    width: 129px !important;
+    height: auto;
   }
   
 
